@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/cc.css' %}">
+    <script src="{% static 'js/cc.js' %}"></script>
+    <body oncontextmenu="return false;"></body>
+    <script>document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+        return false;
+        }
+        }
+        </script>
+</head>
+<body>
+    <div id="dabba">
+        <H1 style="text-align: center;font-family: 'Sixtyfour Convergence', sans-serif;">[click on the name]<br> <hr> </H1>
+        <H1 id="Welcome" style="text-align: center;font-family: 'Sixtyfour Convergence', sans-serif;">Lock your pref : 1</H1>
+        <div id="middledabba">
+            <div class="vertical-btn-group">
+                <button id="person1" class="persons" onclick='person1()'> person1</button>
+                <button id="person2" class="persons" onclick='person2()'>person2</button>
+                <button id="person3" class="persons" onclick='person3()'>person3</button>
+            </div>
+            <div class="vertical-btn-group">
+                <h2 id="pref" class="preference" style="width: 25vw; text-align: center;">Your preferential order is : </h2>
+            </div>
+        </div>
+        
+        <div class="center" id="haa">
+            <a class="button" href="javascript:lock()">
+              <span class="text" id="locks" >Complete all your preferences to continue</span>
+            </a>
+          </div>
+        <div id="last" style="display: none;">
+            <div class="checks">
+                <h2 >Tick the box - for CONFIRMation -></h2>
+                <input type="checkbox" id="finalcc" style="width: 50px; height: 50px; margin: 30px;" unchecked>
+            </div>
+            <div class="center">
+                <a class="button" href="javascript:final()">
+                <span class="text">Agree and Go</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

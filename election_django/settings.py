@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-f^!wwek4z0%hwo8kgn(-hvxo0$m&a$iujzu6j)g1z^d=dwcofs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['abhishek-arch']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'voting'
 ]
 
 MIDDLEWARE = [
